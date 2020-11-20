@@ -1,0 +1,14 @@
+/.vs
+/Clients/ClientLocal/obj
+/Integrations/RunZCloudLinkWinForms/bin
+/Integrations/RunZCloudLinkWinForms/obj
+/Libs/LibFunctional/bin
+/Libs/LibFunctional/obj
+/Libs/LibInterfaces/obj
+/Libs/LibTcpPackages/bin
+/Libs/LibTcpPackages/obj
+/packages
+/Servers/ServerLocal/bin
+/Servers/ServerLocal/obj
+/Servers/UIServer/bin
+/Servers/UIServer/obj
