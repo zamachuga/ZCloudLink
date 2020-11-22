@@ -1,4 +1,5 @@
 ﻿using LibInterfaces.Recipient;
+using LibInterfaces.Sender;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,7 +12,7 @@ using System.Windows.Forms;
 
 namespace RunZCloudLinkLocal.WinForms
 {
-	public partial class FormStart : Form, IFormStart, IUIController
+	public partial class FormStart : Form, IUIRecipient, IUISender
 	{
 		public FormStart()
 		{

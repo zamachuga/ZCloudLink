@@ -12,20 +12,20 @@ namespace UIServer
 	/// <summary>
 	/// Контроллер пользовательского интерфейса.
 	/// </summary>
-	class Controller : IUIController
+	class Controller : IUIRecipient
 	{
 		/// <summary>
 		/// Инициализировать.
 		/// </summary>
 		private Controller()
 		{
-			m_FormStartServer = new FormStart();
+			m_FormStart = new FormStart();
 		}
 
 		/// <summary>
 		/// Инициализировать.
 		/// </summary>
-		private static IUIController Instance()
+		private static IUIRecipient Instance()
 		{
 			return new Controller();
 		}
@@ -45,18 +45,19 @@ namespace UIServer
 		/// <summary>
 		/// Форма запуска сервера.
 		/// </summary>
-		private readonly IFormStart m_FormStartServer;
+		private readonly FormStart m_FormStart;
 
 		/// <summary>
 		/// Интерфейс локального пользователя.
 		/// </summary>
-		private IUIController m_UIRecipient => m_FormStartServer as IUIController;
+		private IUIRecipient m_UIRecipient => m_FormStart;
 
 
 
+		// *
 		public void ViewServerState(IRecipientState RecipientState)
 		{
-			m_FormStartServer.ViewServerState(RecipientState);
+			m_FormStart.ViewServerState(RecipientState);
 		}
 	}
 }

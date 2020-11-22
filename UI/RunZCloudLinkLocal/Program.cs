@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using LibInterfaces.Sender;
 
 namespace RunZCloudLinkWinForms
 {
@@ -40,12 +41,18 @@ namespace RunZCloudLinkWinForms
 		/// <returns>Форма для старта приложения.</returns>
 		private static Form InitComponents()
 		{
-			// Получим компоненты.
+			// Получатель.
 			IRecipient _Recipient = IocController.IocKernel.Get<IRecipient>();
-			IUIController _UIController = new FormStart();
 
-			// Регистрация взаимодействия сервера и визуальной части.
+			// Отправитель.
+			ISender _Sender = IocController.IocKernel.Get<ISender>();
+
+			// Интерфейс.
+			FormStart _UIController = new FormStart();
+
+			// Регистрация визуальной части.
 			_Recipient.RegUI(_UIController);
+			_Sender.RegUI(_UIController);
 
 			return _UIController.GeneralForm;
 		}

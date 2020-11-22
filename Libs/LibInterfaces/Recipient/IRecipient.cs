@@ -14,10 +14,10 @@ namespace LibInterfaces.Recipient
 		/// <summary>
 		/// Регистрация визуального компонента для взаимодействия с сервером.
 		/// </summary>
-		/// <param name="uIServerLocal"></param>
+		/// <param name="UIController"></param>
 		/// <remarks>
 		/// Сохранение ссылки, подписка событий.
 		/// </remarks>
-		void RegUI(IUIController uIServerLocal);
+		void RegUI(IUIRecipient UIController);
 	}
 }

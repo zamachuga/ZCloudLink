@@ -54,8 +54,8 @@ namespace RunZCloudLinkWinForms
 				.ToMethod(Context => FuncReflection.GetObject<IRecipient>(MethodInstance: "Instance", AssemblyName: "LibTcpPackages", ParametersInvoke: null))
 				.InSingletonScope();
 
-			Bind<IUIController>()
-				.ToMethod(Context => FuncReflection.GetObject<IUIController>(MethodInstance: "Instance", AssemblyName: "UIServer", ParametersInvoke: null))
+			Bind<IUIRecipient>()
+				.ToMethod(Context => FuncReflection.GetObject<IUIRecipient>(MethodInstance: "Instance", AssemblyName: "UIServer", ParametersInvoke: null))
 				.InSingletonScope();
 		}
 	}

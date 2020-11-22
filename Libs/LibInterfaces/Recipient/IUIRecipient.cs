@@ -8,9 +8,9 @@ using System.Windows.Forms;
 namespace LibInterfaces.Recipient
 {
 	/// <summary>
-	/// Интерфейс визуальной части локального сервера.
+	/// Интерфейс визуальной части отправителя.
 	/// </summary>
-	public interface IUIController
+	public interface IUIRecipient
 	{
 		/// <summary>
 		/// Главная форма.

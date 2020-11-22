@@ -37,7 +37,11 @@
 			this.TextBoxIp = new System.Windows.Forms.TextBox();
 			this.LabelIp = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.groupBox1.SuspendLayout();
+			this.groupBox2.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// groupBox1
@@ -49,12 +53,12 @@
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Controls.Add(this.TextBoxIp);
 			this.groupBox1.Controls.Add(this.LabelIp);
-			this.groupBox1.Location = new System.Drawing.Point(12, 12);
+			this.groupBox1.Location = new System.Drawing.Point(296, 12);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(278, 106);
+			this.groupBox1.Size = new System.Drawing.Size(384, 106);
 			this.groupBox1.TabIndex = 0;
 			this.groupBox1.TabStop = false;
-			this.groupBox1.Text = "Статус севера";
+			this.groupBox1.Text = "Статус получения файлов";
 			// 
 			// ButtonStartStop
 			// 
@@ -119,24 +123,49 @@
 			// 
 			// groupBox2
 			// 
-			this.groupBox2.Location = new System.Drawing.Point(296, 12);
+			this.groupBox2.Controls.Add(this.dataGridView1);
+			this.groupBox2.Location = new System.Drawing.Point(296, 124);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(384, 317);
+			this.groupBox2.Size = new System.Drawing.Size(384, 216);
 			this.groupBox2.TabIndex = 1;
 			this.groupBox2.TabStop = false;
 			this.groupBox2.Text = "Текущие подключения";
 			// 
-			// FormStartServer
+			// dataGridView1
+			// 
+			this.dataGridView1.AllowUserToAddRows = false;
+			this.dataGridView1.AllowUserToDeleteRows = false;
+			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.dataGridView1.Location = new System.Drawing.Point(3, 16);
+			this.dataGridView1.Name = "dataGridView1";
+			this.dataGridView1.ReadOnly = true;
+			this.dataGridView1.Size = new System.Drawing.Size(378, 197);
+			this.dataGridView1.TabIndex = 0;
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Location = new System.Drawing.Point(12, 12);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(278, 328);
+			this.groupBox3.TabIndex = 2;
+			this.groupBox3.TabStop = false;
+			this.groupBox3.Text = "Статус отправки файлов";
+			// 
+			// FormStart
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(695, 352);
+			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
-			this.Name = "FormStartServer";
+			this.Name = "FormStart";
 			this.Text = "Запуск сервера";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.groupBox2.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -152,5 +181,7 @@
 		private System.Windows.Forms.Label LabelStatus;
 		private System.Windows.Forms.Button ButtonStartStop;
 		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.GroupBox groupBox3;
 	}
 }

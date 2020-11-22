@@ -8,7 +8,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ServerLocal
+namespace LibTcpPackages.Recipient
 {
 	/// <summary>
 	/// Контроллер взаимодействия с клиентом.

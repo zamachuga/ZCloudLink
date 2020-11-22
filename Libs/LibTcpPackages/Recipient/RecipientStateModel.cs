@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LibInterfaces.Recipient;
 
-namespace ServerLocal
+namespace LibTcpPackages.Recipient
 {
 	class RecipientStateModel : IRecipientState
 	{

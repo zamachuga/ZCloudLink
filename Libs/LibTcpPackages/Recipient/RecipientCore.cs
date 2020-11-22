@@ -5,7 +5,7 @@ using System.Net;
 using System.Net.Sockets;
 using System.Threading;
 
-namespace ServerLocal
+namespace LibTcpPackages.Recipient
 {
 	/// <summary>
 	/// Контроллер получателя пакетов.
@@ -68,7 +68,7 @@ namespace ServerLocal
 		/// <summary>
 		/// Интерфейс сервера.
 		/// </summary>
-		private IUIController m_UIRecipient;
+		private IUIRecipient m_UIRecipient;
 
 		/// <summary>
 		/// Состояние сервера.
@@ -197,8 +197,7 @@ namespace ServerLocal
 		/// Зарегистрировать визуальный интерфейс для взаимодействия.
 		/// </summary>
 		/// <param name="UIServerLocal">Визуальный интерфейс.</param>
-		/// TODO: NotImplementedException.
-		public void RegUI(IUIController UIServerLocal)
+		public void RegUI(IUIRecipient UIServerLocal)
 		{
 			m_UIRecipient = UIServerLocal;
 			m_UIRecipient.EventServerStateShange += EventServerStateShanged;

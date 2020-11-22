@@ -45,8 +45,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Recipient\IRecipientState.cs" />
     <Compile Include="Recipient\IRecipient.cs" />
-    <Compile Include="Recipient\IUIController.cs" />
+    <Compile Include="Recipient\IUIRecipient.cs" />
     <Compile Include="Recipient\RecipientStatus.cs" />
+    <Compile Include="Sender\ISender.cs" />
+    <Compile Include="Sender\IUISender.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
