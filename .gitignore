@@ -12,3 +12,6 @@
 /Servers/ServerLocal/obj
 /Servers/UIServer/bin
 /Servers/UIServer/obj
+/UI/RunZCloudLinkLocal/bin
+/UI/RunZCloudLinkLocal/obj
+/Libs/LibInterfaces/bin
