@@ -43,10 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Server\Local\IServerState.cs" />
-    <Compile Include="Server\Local\IServerLocal.cs" />
-    <Compile Include="Server\Local\IUIServerLocal.cs" />
-    <Compile Include="Server\ServerStatus.cs" />
+    <Compile Include="Recipient\IRecipientState.cs" />
+    <Compile Include="Recipient\IRecipient.cs" />
+    <Compile Include="Recipient\IUIController.cs" />
+    <Compile Include="Recipient\RecipientStatus.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
